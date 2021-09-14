@@ -1,11 +1,11 @@
 import React from 'react';
 import './homepage.css'
 
-const Homepage = () => {
+const Homepage = ({setLoginUser}) => {
     return (
         <div className="homepage">
         <h1>hello homepage</h1>
-        <div className="button">Logout</div>
+        <button className="button" onClick={()=>setLoginUser({})}>Logout</button>
         </div>
     )
 };
